@@ -1,7 +1,5 @@
 {
     // variable initializations
-    let answer = ANSWER.NO;
-    let current_step = 0;
     const negative_messages = [
         'Are you absolutely positive?',
         'Seriously? Like, for real?',
