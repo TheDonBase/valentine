@@ -1,4 +1,5 @@
 {
+    let step = 0;
     // variable initializations
     const negative_messages = [
         'Are you absolutely positive?',
@@ -41,11 +42,24 @@
     }
 
     const negative_answer = () => {
-        const message = get_random_message();
+        let message = get_random_message();
         const image = get_random_image();
-
+        if (step === 9) {
+            message = "Last chance...";
+        }
+        if(step >= 10) {
+            remove_no_button();
+        }
         change_text(message);
         change_cat_image(`assets/images/${image}`)
+        step++;
+    }
+
+    const remove_no_button = () => {
+        const noButton = document.querySelector('[data-answer="no"]');
+        if (noButton) {
+            noButton.remove();
+        }
     }
 
     const main = () => {
