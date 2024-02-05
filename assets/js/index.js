@@ -2,13 +2,16 @@
     let step = 0;
     // variable initializations
     const negative_messages = [
-        'Are you absolutely positive?',
-        'Seriously? Like, for real?',
-        'Nah, try again.',
-        'Oops, wrong answer!',
-        'Umm... that would be a nope.',
-        'Oh, sweetie, that is so not the right answer!',
+    'Are you absolutely positive?',
+    'Seriously? Like, for real?',
+    'Nah, try again.',
+    'Oops, wrong answer!',
+    'Umm... that would be a nope.',
+    'Oh, sweetie, that is so not the right answer!',
+    'Come on, you can do better than that.',
+    'Let\'s give it another shot.',
     ];
+    
     const negative_cat_images = ['angry_cat_1.jpg', 'angry_cat_2.jpg', 'angry_cat_3.gif', 'angry_cat_4.gif', 'angry_cat_5.gif', 'angry_cat_6.gif'];
 
     // DOM elements
