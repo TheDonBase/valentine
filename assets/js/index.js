@@ -54,7 +54,4 @@
             answer_button.addEventListener('click', answer_click_handler);
 
     }
-
-    // this created a new context
-    document.onload = main;
 }
